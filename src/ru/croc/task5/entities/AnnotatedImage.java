@@ -1,4 +1,6 @@
-package ru.croc.task4;
+package ru.croc.task5.entities;
+
+import ru.croc.task5.graphicObjects.Point;
 
 public class AnnotatedImage {
     private final String imagePath;
@@ -15,6 +17,24 @@ public class AnnotatedImage {
 
     public Annotation[] getAnnotations() {
         return this.annotations;
+    }
+
+    public Annotation findByPoint(Point point) {
+        for (Annotation annotation : this.annotations) {
+            if (annotation.findPoint(point)) {
+                return annotation;
+            }
+        }
+        return null;
+    }
+
+    public Annotation findByLabel(String label) {
+        for (Annotation annotation : this.annotations) {
+            if (annotation.findLabel(label)) {
+                return annotation;
+            }
+        }
+        return null;
     }
 
     @Override

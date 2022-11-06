@@ -1,10 +1,13 @@
-package ru.croc.task4.figures;
+package ru.croc.task4.graphicObjects;
 
 public class Circle extends Figure {
     private Point center;
     private double radius;
 
     public Circle(Point center, double radius) {
+        if (Double.compare(radius, 0.0) <= 0) {
+            throw new IllegalArgumentException("Incorrect circle radius");
+        }
         this.setCenter(center);
         this.setRadius(radius);
     }

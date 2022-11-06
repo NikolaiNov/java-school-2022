@@ -1,10 +1,15 @@
-package ru.croc.task4.figures;
+package ru.croc.task4.graphicObjects;
 
 public class Rectangle extends Figure {
     private Point a;
     private Point b;
 
     public Rectangle(Point a, Point b) {
+        if (a.equals(b) ||
+                Double.compare(a.getX(), b.getX()) > 0 ||
+                Double.compare(a.getY(), b.getY()) > 0) {
+            throw new IllegalArgumentException("Incorrect positions of rectangle vertices.");
+        }
         this.setA(a);
         this.setB(b);
     }

@@ -1,9 +1,7 @@
 package ru.croc.task4;
 
-import ru.croc.task4.figures.Figure;
-import ru.croc.task4.figures.Point;
-import ru.croc.task4.figures.Circle;
-import ru.croc.task4.figures.Rectangle;
+import ru.croc.task4.entities.*;
+import ru.croc.task4.graphicObjects.*;
 
 public class Task4 {
     public static void main(String[] args) {

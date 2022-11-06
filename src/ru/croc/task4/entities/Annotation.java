@@ -1,6 +1,6 @@
-package ru.croc.task4;
+package ru.croc.task4.entities;
 
-import ru.croc.task4.figures.Figure;
+import ru.croc.task4.graphicObjects.Figure;
 
 public class Annotation {
     private Figure figure;
