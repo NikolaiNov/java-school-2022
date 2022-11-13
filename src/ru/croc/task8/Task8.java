@@ -1,6 +1,5 @@
 package ru.croc.task8;
 
-import java.io.IOError;
 import java.math.BigDecimal;
 import java.text.NumberFormat;
 import java.util.IllformedLocaleException;
